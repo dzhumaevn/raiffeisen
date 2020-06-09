@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="ad.size" content="width=100%,height=100%">
+
+	<link rel="stylesheet" href="./styles/animate.min.css"/>
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/slide1.css">
+	<link rel="stylesheet" href="./styles/slide2.css">
+	<link rel="stylesheet" href="./styles/slide3.css">
+	<link rel="stylesheet" href="./styles/products.css">
+
+	<title>Document</title>
+</head>
+<body>
+<div class="container">
+	<img src="images/bg.png" alt="" class="bg">
+
+	<div id="slide1" class="slide animate__animated">
+		<img src="./images/backOpen.png" alt="" class="backOpen">
+		<div class="product sneaker soarAnim"></div>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		     viewBox="0 0 970 610" preserveAspectRatio="xMidYMid meet" class="line" style="">
+			<path id="svgEditorBackground" style="fill: none; stroke: none;"
+			      d="M0 0 L970 0 L970 610 L0 610 Z" class="JfkelgCS_0"></path>
+			<path d="M527,356a121.15,121.15,0,0,0,73-213" style="fill:none;stroke:#fee600;stroke-width:4px;" id="e3_circleArc"
+			      class="JfkelgCS_1"></path>
+			<style data-made-with="vivus-instant">.JfkelgCS_0 {
+				stroke-dasharray: 3160;
+				stroke-dashoffset: 3161;
+			}
+
+			.start .JfkelgCS_0 {
+				animation: JfkelgCS_draw 2000ms linear 0ms forwards;
+			}
+
+			.JfkelgCS_1 {
+				stroke-dasharray: 290;
+				stroke-dashoffset: 290;
+			}
+
+			.start .JfkelgCS_1 {
+				animation: JfkelgCS_draw 1000ms linear 0ms forwards;
+			}
+
+			@keyframes JfkelgCS_draw {
+				100% {
+					stroke-dashoffset: 0;
+				}
+			}
+
+			@keyframes JfkelgCS_fade {
+				0% {
+					stroke-opacity: 1;
+				}
+				93.54838709677419% {
+					stroke-opacity: 1;
+				}
+				100% {
+					stroke-opacity: 0;
+				}
+			}</style>
+		</svg>
+
+		<div class="button play"></div>
+	</div>
+
+	<div id="slide2" class="slide animate__animated">
+		<img src="./images/backMain.png" alt="" class="backMain">
+
+		<img src="./images/card.png" alt="" class="card">
+
+		<div class="priceCircle"></div>
+		<div class="cashbackContainer">
+			<span class="productType animate__animated animate__fadeOut">Одежда</span>
+			<span class="productCashback animate__animated animate__fadeOut">+600,<span class="rest">00₽</span></span>
+			<span class="sum">1280,00₽</span>
+		</div>
+
+		<div class="bag product soarAnim" data-cashback="80" data-product-type="Продукты"></div>
+		<div class="notebook product soarAnim" data-cashback="600" data-product-type="Техника"></div>
+		<div class="sneaker product soarAnim" data-cashback="120" data-product-type="Одежда"></div>
+		<div class="bike product soarAnim" data-cashback="450" data-product-type="Фитнес"></div>
+	</div>
+
+	<div id="slide3" class="slide animate__animated animate__faster">
+		<img src="./images/backPackshot.png" alt="" class="backPackshot">
+		<img src="./images/mastercard.png" alt="" class="mastercard animate__animated animate__faster">
+		<img src="./images/oformite.png" alt="" class="text animate__animated animate__faster">
+		<img src="./images/phonePackshot.png" alt="" class="phonePackshot animate__animated animate__faster">
+
+		<div class="button play animate__animated animate__slower animate__fadeOut"></div>
+	</div>
+</div>
+
+<script src="./scripts/interact.min.js"></script>
+<script src="./scripts/changeSlide.js"></script>
+<script src="./scripts/renderCashback.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>

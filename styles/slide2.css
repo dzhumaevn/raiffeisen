@@ -1,0 +1,86 @@
+#slide2 {
+	z-index: 2;
+	transform: translate(-100%);
+}
+
+.card {
+	width: 54%;
+	top: 28%;
+	left: 50%;
+	transform: translateX(-50%) scale(1);
+	transition: 300ms;
+}
+
+.priceCircle {
+	position: absolute;
+	width: 34%;
+	height: 19%;
+	background: #dbe1df;
+	top: 16.4%;
+	left: 64%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.17);
+	box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.17);
+}
+
+.cashbackContainer {
+	position: absolute;
+	top: 16.5%;
+	left: 59%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 33.5%;
+	height: 19%;
+}
+
+.productType {
+	font-size: 2.4vh;
+}
+
+.productCashback {
+	font-size: 3.1vh;
+}
+
+.productCashback.show,
+.productType.show {
+	opacity: 1
+}
+
+.rest {
+	font-size: 2.6vh;
+}
+
+.sum {
+	color: #808185;
+	font-size: 2vh;
+}
+
+.card.dragEnter {
+	transform: translateX(-50%) scale(1.15);
+}
+
+/* iphone X , XS, 11 Pro */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 414px)
+and (min-device-height: 812px)
+and (max-device-height: 896px)
+and (orientation: portrait) {
+	.productType {
+		font-size: 2vh;
+	}
+
+	.productCashback {
+		font-size: 2.6vh;
+	}
+
+	.rest {
+		font-size: 2vh;
+	}
+
+	.sum {
+		font-size: 1.6vh;
+	}
+}
